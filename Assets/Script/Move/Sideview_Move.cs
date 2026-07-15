@@ -1,6 +1,11 @@
+// Player에게 Groundcheck emptyobject 상속시켜서 발 밑쪽에 놓기, Rigidbody2D, Collider설정
+// 땅 오브젝트한테 Collider, Layer 'Ground' 설정하기 (없으면 만들기)
+// Player Inspector 설정: Groundcheck -> Player에 상속시킨 emptyobject, Groundlayer -> 'Ground'
+// Player Rigidbody Z축 Freeze 필요
+
 using UnityEngine;
 
-public class PlayerController2D : MonoBehaviour
+public class Sideview_Move : MonoBehaviour
 {
     [Header("이동 설정")]
     [SerializeField] private float moveSpeed = 8f;
